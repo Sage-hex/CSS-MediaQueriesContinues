@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+.wrapper-gridContainer{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12,2fr);
+    /* grid-template-rows: 1fr 2.5fr 2fr 1.5fr; */
+    grid-template-rows: repeat(12,1fr);
+    gap: 20px;
+}
+
+
+
+
+.one{
+    /* width: 100px;
+    height: 100px; */
+    background-color: blue;
+    grid-column: span 6;
+    grid-row: span 2;
+}
+.two{
+    background-color: blue;
+    grid-column: span 6;
+    grid-row: span 2;
+}
+.three{
+    /* width: 100px;
+    height: 100px; */
+    background-color: gold;
+    grid-column: span 12;
+    grid-row: span 5;
+}
+.four{
+    /* width: 100px;
+    height: 100px; */
+    background-color: palegreen;
+    grid-column: span 4;
+    grid-row: span 3;
+}
+.five{
+    /* width: 100px;
+    height: 100px; */
+    background-color: palegreen;
+    grid-column: span 4;
+    grid-row: span 3;
+    
+}
+.six{
+    /* width: 100px;
+    height: 100px; */
+    background-color: palegreen;
+    grid-column: span 4;
+    grid-row: span 3;
+}
+.seven{
+    /* width: 100px;
+    height: 100px; */
+    background-color: red;
+    /* grid-row: 1; */
+    grid-column: span 3;
+    grid-row: span 2;
+}
+.eight{
+    /* width: 100px;
+    height: 100px; */
+    background-color: red;
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.nine{
+    /* width: 100px;
+    height: 100px; */
+    background-color: red;
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.ten{
+    /* width: 100px;
+    height: 100px; */
+    background-color: red;
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+@media screen and (max-width:768px){
+    .wrapper-gridContainer{
+/*        grid-template-columns: 1fr 1fr;*/
+       grid-template-rows: 2fr  2fr 2fr 3fr 2fr 2fr 2fr 2fr 2fr;
+       gap: 10px;
+    }
+
+
+    .one{
+  
+    background-color: blue;
+    grid-column: span 12;
+    grid-row: span 1;
+}
+    .two{
+    background-color: blue;
+    grid-column: span 12;
+    grid-row: span 1;
+}
+
+.three{
+    background-color: gold;
+    grid-column: span 12;
+    grid-row: span 2;
+}
+
+.four{
+   
+    background-color: palegreen;
+    grid-column: span 12;
+    grid-row: span 1;
+}
+.five{
+
+    background-color: palegreen;
+    grid-column: span 12;
+    grid-row: span 1;
+    
+}
+.six{
+
+    background-color: palegreen;
+    grid-column: span 12;
+    grid-row: span 1;
+}
+
+.seven{
+    background-color: red;
+    grid-column: span 6;
+    grid-row: span 1;
+}
+.eight{
+    background-color: red;
+    grid-column: span 6;
+    grid-row: span 1;
+}
+
+.nine{
+    background-color: red;
+    grid-column: span 6;
+    grid-row: span 1;
+}
+
+.ten{
+    background-color: red;
+    grid-column: span 6;
+    grid-row: span 1;
+}
+
+}
+
+@media screen and (max-width:475px){
+    .seven{
+    background-color: red;
+    grid-column: span 12;
+   
+}
+.eight{
+    background-color: red;
+    grid-column: span 12;
+   
+}
+
+.nine{
+    background-color: red;
+    grid-column: span 12;
+    display: none;
+    
+}
+
+.ten{
+    background-color: red;
+    grid-column: span 12;
+    display: none;
+}
+
+}

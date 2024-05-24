@@ -1,0 +1,95 @@
+/* styles.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* General styles for blocks */
+.block {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Colors for visual distinction */
+.header {
+    background-color: blue;
+    width: 100%;
+}
+
+.nav {
+    background-color: orange;
+    width: 100%;
+}
+
+.main {
+    background-color: green;
+    width: 100%;
+}
+
+.sub-main-1, .sub-main-2 {
+    background-color: green;
+    width: 50%;
+}
+
+.footer-1, .footer-2, .footer-3 {
+    background-color: red;
+    width: 33.33%;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .header {
+        width: 100%;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .sub-main-1, .sub-main-2 {
+        width: 50%;
+    }
+
+    .footer-1, .footer-2, .footer-3 {
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header {
+        width: 100%;
+    }
+
+    .nav {
+        width: 100%;
+        background-color: ;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .sub-main-1, .sub-main-2 {
+        width: 50%;
+        background-color: brown;
+    }
+
+    .footer-1, .footer-2, .footer-3 {
+        width: 33.33%;
+    }
+}
